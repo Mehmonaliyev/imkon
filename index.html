@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imkon.uz</title>
+</head>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<body onload="showTime()">
+    <div class="container">
+        
+        <div class="row">
+            <!-- imkon -->
+            <div class="col-lg-8 imkon">
+                <div>
+                    <h1 style="font-family: Imprint MT Shadow; font-size: 60px;"><b>imkon</b></h1>
+
+                    <div class="w_div">
+                        <div class="row p_r">
+                            <img src="IMG/auth-bg.png" class="m_img" alt="">
+                            <div class="col-lg-8 col-sm-12 ">
+                                <h4>Mobil ilovasi ishga tushmoqda!</h4>
+                                <p style="color: #989B9F;">Barcha yo'nalishlar jam bo'lgan ilovani hoziroq o'rnating va
+                                    imkoniyatlaringizni
+                                    yanada kengaytiring.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="aylana"></div>
+                            </div>
+
+                            <div class="google_ap ">
+                                <a href="#"> <img src="IMG/google.svg" alt=""></a>
+                                <a href="#"> <img src="IMG/apple.svg" alt=""></a>
+                            </div>
+
+                            <!-- telefon rasmi aylanib turadi -->
+                            <img src="IMG/iphone.png" class="p_a_i2" alt="">
+                            <img src="IMG/samsung.png" class="p_a_i1" alt="">
+
+                            <!-- barg-leaf -->
+                            <div class="barg">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- ob-havo -->
+                <a href="#" style="opacity: 0.1;">
+                    <div class="ob_havo">
+                        <div class="d-flex">
+                            <!-- <i class="fa fa-cloud" style="font-size:25px ; margin-right: 5px;"> </i> -->
+                            <img src="IMG/weather.svg" style="font-size:25px ; margin: 0 5px 5px;" alt="">
+                            <h2>5<sup>o</sup> C</h2>
+                        </div>
+
+                        <div class="beshariq  ">
+                            <h3 class="text_right">Beshariq</h3> <br>
+                            <p id="soat">22:50:02 - 5 Yanvar, 2022</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- kirish -->
+
+                <div class="ob_havo2">
+                    <h3 style="margin: 20px 0;"><b>Kirish</b></h3>
+
+                    <!-- form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Loging</label>
+                            <input type="email" placeholder="Pochta yoki telefoningizni kiriting" class="form-control"
+                                id="email">
+                        </div>
+                        <div class="form-group">
+                            <div class="icon i_m">
+                                <label for="pwd">Parol</label>
+                                <a class="parol" href="#">Parolni unutdingizmi?</a>
+                            </div>
+                            <div class="p_r">
+                                <!-- input password -->
+                                <input type="password" placeholder="Parolingizni kiriting" class="form-control"
+                                    id="pwd">
+                                <i class="fa fa-eye p_a toggle-password" style="font-size:25px ; " id="ko"
+                                    onclick="k()"> </i>
+                                <i class="fa fa-eye-slash p_a" style="font-size:25px ; " id="ya" onclick="y()"> </i>
+                            </div>
+
+                        </div>
+
+
+                        <button style="width: 100%; font-size: 12px;" type="submit" class="btn btn-primary">Tizimga
+                            kirish</button>
+                    </form>
+
+                    <div class="d-flex mar">
+                        <hr>
+                        <p class="yoki">Yoki</p>
+                        <hr>
+                    </div>
+
+                    <div class="icon">
+                        <div>
+                            <i class="fa fa-google" style="font-size:18px ;"> </i>
+                        </div>
+                        <div>
+                            <i class="fa fa-facebook" style="font-size:18px ;"> </i>
+                        </div>
+                        <div>
+                            <i class="fa fa-twitter" style="font-size:18px ;"> </i>
+                        </div>
+                        <div>
+                            <i class="fa fa-vk" style="font-size:18px ;"> </i>
+                        </div>
+                        <div>
+                            <i class="fa fa-facebook" style="font-size:18px ;"> </i>
+                        </div>
+                        <div>
+                            <i class="fa fa-apple" style="font-size:18px ;"> </i>
+                        </div>
+                    </div>
+
+                    <p class=" text-center"><a class="yoki" href="#">Orqali kiring</a></p>
+
+
+                </div>
+
+                <div class="ob_havo2  icon">
+                    <p class="yoki">Tarmoqda yangimisz</p>
+                    <a href="royhat/ro'yhatdan o'tish.html" target="_blanck"
+                        title="Ro'yhatdan o'tish bo'limiga kirish...!!!" class="yoki royhat">Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Xizmat ko'rsatish shartlari</a>
+                <a href="#">Maxfiylik siyosati</a>
+                <a href="#">Cookie fayllari siyosati</a>
+                <a href="#">Reklama haqida ma'lumot</a>
+            </div>
+
+            <div>
+                <!-- til -->
+
+                <select class="form-select f_s">
+                    <option>O'zbek</option>
+                    <option>English</option>
+                    <option>Tojik</option>
+                    <option>Ruskiy</option>
+                </select>
+                <a href="#">Brend resurslari</a>
+                <a href="#">Imkon 2022</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>
